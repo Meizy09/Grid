@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+display: grid;
+grid-template-columns:  repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+gap: 2rem;
+}
+
+.testimonial1{
+  padding: 2rem;
+  border-radius: 0.75rem;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: #733fc8;
+  grid-column: span 2;
+  background-image:url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.testimonial1 h4{
+    color: wheat;
+}
+.testimonial1 h5{
+    color: whitesmoke;
+}
+.testimonial1 p{
+    color: white;
+}
+.testimonial2{
+  padding: 2rem;
+  border-radius: 0.75rem;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: darkblue;
+  grid-column: span 1; 
+}
+.testimonial3{
+  padding: 2rem;
+  border-radius: 0.75rem;
+  color: black;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: white;
+  grid-column: span 1; 
+}
+.testimonial4{
+  padding: 2rem;
+  border-radius: 0.75rem;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: black;
+  grid-column: span 2; 
+}
+.testimonial5{
+    padding: 2rem;
+  border-radius: 0.75rem;
+  color: black;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: white;
+  grid-row: span 2; 
+}
+/* .profile{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.profile img { 
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+
+    .profile-info h4 {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .profile-info p {
+      margin: 0;
+      font-size: 0.75rem;
+      opacity: 0.7;
+    } */
+
+
+    .profile-detail{
+      display: flex;
+      flex-direction: row;
+      padding-top: 20px;
+      padding-left: 5px;
+    }
+    .profile-detail img{
+     width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 1rem;
+      
+    }
+     
+    @media (max-width: 600px) {
+    .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+      
+    }
